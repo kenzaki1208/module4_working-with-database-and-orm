@@ -13,5 +13,6 @@
         <property name="hbm2ddl.auto">update</property>
         <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.practice.p1.model.Customer"/>
         <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.exercise.ex1.model.Song"/>
+        <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.exercise.ex2.model.Comment"/>
     </session-factory>
 </hibernate-configuration>
