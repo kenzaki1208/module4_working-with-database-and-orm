@@ -1,5 +1,7 @@
 package org.example.week2working_with_database_and_orm.configuration;
 
+import jakarta.servlet.MultipartConfigElement;
+import jakarta.servlet.ServletRegistration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -16,5 +18,10 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
+    }
+
+    @Override
+    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+        registration.setMultipartConfig(new MultipartConfigElement("", 52428800, 52428800, 0));
     }
 }
