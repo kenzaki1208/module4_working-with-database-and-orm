@@ -14,5 +14,6 @@
         <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.practice.p1.model.Customer"/>
         <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.exercise.ex1.model.Song"/>
         <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.exercise.ex2.model.Comment"/>
+        <mapping class="org.example.week2working_with_database_and_orm.working_with_database_and_orm.exercise.jpa_exercise.model.CommentJPA"/>
     </session-factory>
 </hibernate-configuration>

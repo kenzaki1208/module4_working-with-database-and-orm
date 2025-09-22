@@ -42,7 +42,7 @@ public class CommentRepository {
     }
 
     public List<Comment> findToDayComments() {
-        String hql = "SELECT c FROM Comment c WHERE c.date = :today";
+        String hql = "SELECT c FROM CommentJPA c WHERE c.date = :today";
         TypedQuery<Comment> query = entityManager.createQuery(hql, Comment.class);
         query.setParameter("today", LocalDate.now());
         return query.getResultList();
